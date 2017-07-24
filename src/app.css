@@ -1,0 +1,22 @@
+body {
+    background: url('./images/bg.jpg');
+    background-size: cover;
+    font-family: 'Droid Serif', serif;
+    display: flex;
+}
+
+.circle {
+    background-color: rgba(255, 255, 255, 0.72);;
+    border-radius: 50%;
+    width:  30em;
+    height: 30em;
+    align-items: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h1 {
+    font-size: 5em;
+}
