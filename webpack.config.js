@@ -1,4 +1,6 @@
 var path = require("path");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
+
 module.exports = {
   entry: {
     app: ["./src/entry.js"]
@@ -18,5 +20,11 @@ module.exports = {
         loaders: ["file-loader?hash=sha512&digest=hex&name=[hash].[ext]"]
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "PedalKit - Curated cycle clothing collections",
+      template: "src/index.ejs"
+    })
+  ]
 };
