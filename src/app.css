@@ -1,30 +1,97 @@
 body {
-    background: url('./images/bg.jpg');
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+  background: url('./images/bg.jpg');
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 
-    font-family: 'Droid Serif', serif;
+  font-family: 'Droid Serif', serif;
 }
 
 .circle {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    width:  30em;
-    height: 30em;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  width:  30em;
+  height: 30em;
 
-    align-items: center;
-    justify-content: center;
-    display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .info {
-    text-align: center;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.info svg {
+  margin-top: 2em;
+  padding-bottom: 1em;
 }
 
 .info a {
-    border-bottom: 2px solid #FFC68C;
-    text-decoration: none;
-    color: #212838;
+  padding-top: 2em;
+  border-bottom: 1px solid #FFC68C;
+  text-decoration: none;
+  color: #212838;
 }
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait) {
+
+  svg {
+    width: 470px;
+    height: 129px;
+  }
+
+  .circle {
+    width: 50em !important;
+    height: 50em;
+  }
+
+  .info {
+    font-size: 2.2em;
+  }
+
+}
+
+/* 1.1 */
+/* Increase padding between link and logo to 2.5em */
+
+/* 1.2 */
+/* .info { */
+/* font-size: 1.2em; */
+/* margin-top: 4em; //// this is just to vertically align the logo and link, otherwise it's too top heavy. */
+/* } */
+
+/* 1.3 */
+/* .info a { */
+/* border-bottom: 1px solid #FFC68C; */
+/* } */
+
+/* 2. Mobile - <720px wide */
+
+/* 2.1 */
+/* .circle { */
+/* width: 50em; */
+/* height: 50em; */
+/* } */
+
+/* 2.2 */
+/* SVG width: 470px height: 129px */
+
+/* 2.3 */
+/* Increase padding between link and logo to 2em */
+
+/* 2.4 */
+/* .info { */
+/* font-size: 2.5em; */
+/* padding-top: 4em; //// this is just to vertically align the logo and link, otherwise it's too top heavy. */
+/* } */
+
+/* 2.5 */
+/* .info a { */
+/* border-bottom: 1px solid #FFC68C; */
+/* } */
